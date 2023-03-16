@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- style for AC, +/-, %  -->
+    <style name="topThreeBtn" parent="@style/Theme.AppCompat">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:backgroundTint">@color/backgroundColor</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:layout_margin">@dimen/_2pxh</item>
+    </style>
+
+    <style name="sideBtn" parent="@style/Theme.AppCompat">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:backgroundTint">@color/backgroundColor</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:layout_margin">@dimen/_2pxh</item>
+    </style>
+
+    <style name="mainBtn" parent="@style/Theme.AppCompat">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:backgroundTint">@color/backgroundColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:layout_margin">@dimen/_2pxh</item>
+    </style>
+
+</resources>
