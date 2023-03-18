@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var lastNumeric = false
     private var statsError = false
+    private var isDot = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,6 +93,7 @@ class MainActivity : AppCompatActivity() {
         show?.visibility = View.VISIBLE
         result?.visibility = View.GONE
         show?.append((view as Button).text.toString())
+        isDot = false
 
     }
 
@@ -137,6 +139,7 @@ class MainActivity : AppCompatActivity() {
        result?.text = ""
        lastNumeric = false
        statsError = false
+       isDot = false
    }
 
    private fun onShow(){
@@ -151,8 +154,12 @@ class MainActivity : AppCompatActivity() {
    }
 
    private fun onDotClick(view: View){
+       if(!isDot){
            show?.append((view as AppCompatButton).text.toString())
            lastNumeric = false
+           isDot = true
+       }
+
 
    }
 }
