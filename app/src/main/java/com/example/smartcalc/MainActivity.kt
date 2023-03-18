@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
                  result?.visibility = View.VISIBLE
                  val b = "="+String.format("%.2f",data)
                  result?.text = b
-                 show?.visibility = View.GONE
+
 
              } catch (e: Exception) {
                  Log.d("ERROR", "Err")
