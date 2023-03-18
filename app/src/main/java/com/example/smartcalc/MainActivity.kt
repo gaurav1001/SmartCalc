@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
              try {
                  val data = expression.evaluate()
                  result?.visibility = View.VISIBLE
-                 val b = "=$data"
+                 val b = "="+String.format("%.2f",data)
                  result?.text = b
                  show?.visibility = View.GONE
 
